@@ -106,6 +106,7 @@
     <DefineConstants>$(DefineConstants);VS15</DefineConstants>
     <VsixOutputDirName>VS15</VsixOutputDirName>
     <CodeAnalysisRuleSet Condition="'$(CodeAnalysisRuleSet)' == ''">$(BuildCommonDirectory)NuGet.ruleset</CodeAnalysisRuleSet>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
   </PropertyGroup>
 
   <PropertyGroup>
