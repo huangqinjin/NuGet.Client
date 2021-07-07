@@ -9,9 +9,5 @@ namespace NuGet.Commands
     {
         void StartProjectUpdate(string projectName);
         void EndProjectUpdate(string projectName);
-
-        void StartSolutionRestore(IReadOnlyList<string> projects);
-
-        void EndSolutionRestore(IReadOnlyList<string> projects);
     }
 }

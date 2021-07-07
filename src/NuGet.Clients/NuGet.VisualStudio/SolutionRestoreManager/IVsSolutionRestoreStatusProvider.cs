@@ -31,7 +31,5 @@ namespace NuGet.SolutionRestoreManager
         /// Restores running due to Install/Update/Uninstall operations are NOT included in this status. Status here is limited to IVsSolutionRestoreService.
         /// </remarks>
         Task<bool> IsRestoreCompleteAsync(CancellationToken token);
-
-        // TODO NK - Should the events be added here?
     }
 }

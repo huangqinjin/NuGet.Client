@@ -42,6 +42,7 @@
     <Compile Include="Guids.cs" />
     <Compile Include="ISolutionRestoreChecker.cs" />
     <Compile Include="ISolutionRestoreJob.cs" />
+    <Compile Include="IVsNuGetProgressReporter.cs" />
     <Compile Include="Logger\NuGetFileLogger.cs" />
     <Compile Include="NuGetSolutionService.cs" />
     <Compile Include="PkgCmdID.cs" />

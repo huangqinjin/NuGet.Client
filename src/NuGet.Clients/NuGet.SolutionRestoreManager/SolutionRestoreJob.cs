@@ -49,7 +49,7 @@ namespace NuGet.SolutionRestoreManager
         private readonly ISettings _settings;
         private readonly IRestoreEventsPublisher _restoreEventsPublisher;
         private readonly ISolutionRestoreChecker _solutionUpToDateChecker;
-        private readonly INuGetProgressReporter _nuGetProgressReporter;
+        private readonly IVsNuGetProgressReporter _nuGetProgressReporter;
 
         private RestoreOperationLogger _logger;
         private INuGetProjectContext _nuGetProjectContext;
@@ -78,7 +78,7 @@ namespace NuGet.SolutionRestoreManager
             IRestoreEventsPublisher restoreEventsPublisher,
             ISettings settings,
             ISolutionRestoreChecker solutionRestoreChecker,
-            INuGetProgressReporter nuGetProgressReporter)
+            IVsNuGetProgressReporter nuGetProgressReporter)
             : this(AsyncServiceProvider.GlobalProvider,
                   packageRestoreManager,
                   solutionManager,
@@ -98,7 +98,7 @@ namespace NuGet.SolutionRestoreManager
             IRestoreEventsPublisher restoreEventsPublisher,
             ISettings settings,
             ISolutionRestoreChecker solutionRestoreChecker,
-            INuGetProgressReporter nuGetProgressReporter)
+            IVsNuGetProgressReporter nuGetProgressReporter)
         {
             Assumes.Present(asyncServiceProvider);
             Assumes.Present(packageRestoreManager);
