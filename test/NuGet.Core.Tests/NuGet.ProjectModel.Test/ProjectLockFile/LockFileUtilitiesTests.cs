@@ -164,7 +164,6 @@ namespace NuGet.ProjectModel.Test.ProjectLockFile
 
             var dependency1 = new LibraryDependency(
                 new LibraryRange("library1", versionRange: VersionRange.Parse("1.0.0"), LibraryDependencyTarget.Package),
-                LibraryDependencyType.Default,
                 LibraryIncludeFlags.All,
                 LibraryIncludeFlags.All,
                 new List<Common.NuGetLogCode>(),
@@ -222,7 +221,6 @@ namespace NuGet.ProjectModel.Test.ProjectLockFile
 
             var dependency1 = new LibraryDependency(
                 new LibraryRange("library1", versionRange: VersionRange.Parse("1.0.0"), LibraryDependencyTarget.Package),
-                LibraryDependencyType.Default,
                 LibraryIncludeFlags.All,
                 LibraryIncludeFlags.All,
                 new List<Common.NuGetLogCode>(),
@@ -824,7 +822,6 @@ namespace NuGet.ProjectModel.Test.ProjectLockFile
 
             var packageC = new LibraryDependency(
                 new LibraryRange("packageC", versionRange: VersionRange.Parse("1.0.0"), LibraryDependencyTarget.Package),
-                type: LibraryDependencyType.Default,
                 includeType: LibraryIncludeFlags.All,
                 suppressParent: LibraryIncludeFlagUtils.DefaultSuppressParent,
                 noWarn: new List<Common.NuGetLogCode>(),
